@@ -13,7 +13,7 @@ using namespace std;
 #ifdef ONLINE_JUDGE
 #define FILEIO(name) \
     freopen(name".in", "r", stdin); \
-freopen(name".out", "w", stdout);
+    freopen(name".out", "w", stdout);
 #else
 #define FILEIO(name)
 #endif
@@ -54,7 +54,8 @@ int main(){
 
     int T = 0;
     LL a, b, c;
-    while(cin >> a >> b >> c and a and b and c) {
+    // Pick me!
+    while(cin >> a >> b >> c or a or b or c) {
         T++;
         choc.clear();
         choc.PB(a); choc.PB(b); choc.PB(c);
@@ -77,7 +78,8 @@ int main(){
                 }
             }
 
-            if(bv == -1){
+            //pick me
+            if(bv == 0){
                 ans.PB(1);
                 break;
             }
@@ -86,11 +88,12 @@ int main(){
 
         }
 
-        cout << "Case #" << T << ":\n" << ans.size() << "\n";
+        cout << "Case #" << T << ": " << ans.size() << "\n";
         for(int i=0; i<(int)ans.size(); i++) {
-            cout << ans[i] << (i == (int)ans.size() - 1 ? "" : " ");
+            cout << ans[i] << " "[i == (int)ans.size() - 1];
         }
         cout << endl;
     }
     return 0;
 }
+
