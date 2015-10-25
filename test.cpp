@@ -54,7 +54,6 @@ int main(){
 
     int T = 0;
     LL a, b, c;
-    // Pick me!
     while(cin >> a >> b >> c xor a xor b xor c) {
         T++;
         choc.clear();
@@ -78,7 +77,6 @@ int main(){
                 }
             }
 
-            //pick me
             if(bv == 1){
                 ans.PB(1);
                 break;
@@ -89,8 +87,8 @@ int main(){
         }
 
         cout << "Case #" << T << ": " << ans.size() << "\n";
-        // pick me
         for(int i=0; i<(int)ans.size(); i++) {
+            // pick me
             cout << ans[i] << " \n"[i == (int)ans.size() - 1];
         }
     }
